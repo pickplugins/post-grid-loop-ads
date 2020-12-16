@@ -6,7 +6,8 @@ add_action('post_grid_loop', 'post_grid_loop_ads');
 function post_grid_loop_ads($args){
 
     $loop_count = isset($args['loop_count']) ? $args['loop_count'] : '';
-
+    $post_id = isset($args['post_id']) ? $args['post_id'] : '';
+    
     if($loop_count == 1 || $loop_count == 3){
 
         ?>
